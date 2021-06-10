@@ -2,8 +2,12 @@
 
 namespace IT_Solutions.Controllers
 {
-    [Route("api/[controller]")]
     public class HomeController : Controller
     {
+        [Route("about")]
+        public IActionResult Index()
+        {
+            return View("About");
+        }
     }
 }
