@@ -14,13 +14,21 @@ namespace IT_Solutions
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            app.Use(async (context, next) =>
             {
-                app.UseDeveloperExceptionPage();
-            }
+                if (!context.Request.IsHttps)
+                {
+                    context.Response.Redirect("/error.html");
+
+                    return;
+                }
+
+                await next();
+            });
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
             app.UseRouting();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
