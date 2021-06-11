@@ -4,10 +4,22 @@ namespace IT_Solutions.Controllers
 {
     public class HomeController : Controller
     {
-        [Route("about")]
+        [HttpGet("")]
         public IActionResult Index()
         {
-            return View("About");
+            return View();
+        }
+
+        [HttpGet("contact")]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [HttpGet("technologies")]
+        public IActionResult Technologies()
+        {
+            return View();
         }
     }
 }
