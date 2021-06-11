@@ -26,6 +26,7 @@ namespace IT_Solutions
                 await next();
             });
             app.UseHttpsRedirection();
+            app.UseHsts();
             app.UseStaticFiles();
 
             app.UseRouting();

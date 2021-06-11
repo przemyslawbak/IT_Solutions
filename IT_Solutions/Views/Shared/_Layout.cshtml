@@ -3,38 +3,42 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Przemyslaw Bak IT Solutions</title>
+    <link rel="stylesheet" href="~/src/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/dist/site.css" />
+    <link rel="icon" href="~/src/img/favicon.gif">
+    <title>@ViewBag.Title - Przemysław Bąk {IT Solutions}</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-page="/Index" class="navbar-brand">WebApplication1</a>
+    <wrapper class="d-flex flex-column">
+        <div class="header">
+            <!--HEADER-->
+            <div class="mainHeader">
+                <div class="spotlight"></div>
+                <div class="col-sm-9 col-xs-12 mainTextContainer">
+                    <div class="container1" data-text="Przemysław Bąk {IT Solutions} ">
+                        <span class="shadeMe">Przemysław Bąk {IT Solutions}</span>
+                    </div>
+                    <div class="container2" data-text="for you and your company">
+                        <span class="shadeMe">for you and your company</span>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <a rel="canonical" asp-controller="Home" asp-action="Index">About</a>
-                    <a rel="canonical" asp-controller="Home" asp-action="Contact">Context</a>
-                    <a rel="canonical" asp-controller="Home" asp-action="Technologies">Technologies</a>
-                </ul>
+            <div class="mainNavbar">
+                <div><a class="mainButton projects noSelect " rel="canonical" asp-controller="Home" asp-action="Index">about</a></div>
+                <div><a class="mainButton contact noSelect " rel="canonical" asp-controller="Home" asp-action="Contact">contact</a></div>
+                <div><a class="mainButton technologies noSelect " rel="canonical" asp-controller="Home" asp-action="Technologies">technologies</a></div>
             </div>
         </div>
-    </nav>
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
+        <!--BODY-->
+        <main class="container-fluid py-3 flex-fill">
+            @RenderBody()
+        </main>
+        <!--FOOTER-->
         <footer>
-            <p>some footer</p>
+            <div class="footText">&copy @DateTime.Now.Year - Przemysław Bąk {IT Solutions}</div>
         </footer>
-    </div>
+    </wrapper>
 </body>
 </html>
 

@@ -7,18 +7,21 @@ namespace IT_Solutions.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
+            @ViewBag.Title = "About";
             return View();
         }
 
         [HttpGet("contact")]
         public IActionResult Contact()
         {
+            @ViewBag.Title = "Contact";
             return View();
         }
 
         [HttpGet("technologies")]
         public IActionResult Technologies()
         {
+            @ViewBag.Title = "Technologies";
             return View();
         }
     }
