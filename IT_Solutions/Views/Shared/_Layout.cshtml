@@ -10,40 +10,43 @@
 </head>
 
 <body>
-    <wrapper class="d-flex flex-column">
-        <div class="header">
-            <!--HEADER-->
-            <div class="mainHeader">
-                <div class="row">
-                    <div class="spotlight col-12"></div>
-                    <div class="mainTextContainer col-12">
-                        <div class="container1" data-text="Przemysław Bąk {IT Solutions} ">
-                            <span class="shadeMe">Przemysław Bąk {IT Solutions}</span>
-                        </div>
-                        <div class="container2" data-text="for you and your company">
-                            <span class="shadeMe">for you and your company</span>
+    <div class="container">
+        <wrapper class="d-flex flex-column">
+            <div class="header">
+                <!--HEADER-->
+                <div class="mainHeader">
+                    <div class="row">
+                        <div class="spotlight col-12"></div>
+                        <div class="mainTextContainer col-12">
+                            <div class="container1" data-text="Przemysław Bąk {IT Solutions} ">
+                                <span class="shadeMe">Przemysław Bąk {IT Solutions}</span>
+                            </div>
+                            <div class="container2" data-text="for you and your company">
+                                <span class="shadeMe">for you and your company</span>
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                
-            </div>
-            <div class="mainNavbar">
-                <div class="center">
-                    <div><a class="mainButton" rel="canonical" asp-controller="Home" asp-action="Index">about</a></div>
-                    <div><a class="mainButton" rel="canonical" asp-controller="Home" asp-action="Contact">contact</a></div>
-                    <div><a class="mainButton" rel="canonical" asp-controller="Home" asp-action="Technologies">technologies</a></div>
+                <div class="mainNavbar">
+                    <div class="center">
+                        <div><a class="mainButton hoverBtn" rel="canonical" asp-controller="Home" asp-action="Index">about</a></div>
+                        <div><a class="mainButton hoverBtn" rel="canonical" asp-controller="Home" asp-action="Contact">contact us</a></div>
+                        <div><a class="mainButton hoverBtn" rel="canonical" asp-controller="Home" asp-action="Technologies">technologies</a></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--BODY-->
-        <main class="container-fluid py-3 flex-fill">
-            @RenderBody()
-        </main>
-        <!--FOOTER-->
-        <footer>
-            <div class="footText">&copy @DateTime.Now.Year - Przemysław Bąk {IT Solutions}</div>
-        </footer>
-    </wrapper>
+            <!--BODY-->
+            <main class="container-fluid py-3 flex-fill">
+                @RenderBody()
+            </main>
+            <!--FOOTER-->
+            <footer>
+                <div class="footText">&copy @DateTime.Now.Year - Przemysław Bąk {IT Solutions}</div>
+            </footer>
+        </wrapper>
+    </div>
+    
     <!--SCRIPTS-->
     <script src="~/src/js/jquery.js"></script>
     <script src="~/src/lib/bootstrap/js/bootstrap.min.js"></script>

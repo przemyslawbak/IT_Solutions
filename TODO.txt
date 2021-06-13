@@ -1,2 +1,16 @@
 OK - complete default routing
 OK - complete routing
+OK - background effect
+NO - header in one line
+OK - header centered
+OK - view container
+NO - col in header
+- page bootstrap container- hover effect on nav btns
+- contact form
+- contact view
+- rodo / privacy policy
+- list of techs
+- techs view
+- techs model
+- main / about view
+- languages?
