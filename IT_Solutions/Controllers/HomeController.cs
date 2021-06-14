@@ -7,7 +7,7 @@ namespace IT_Solutions.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            @ViewBag.Title = "About";
+            @ViewBag.Title = "Services";
             return View();
         }
 
