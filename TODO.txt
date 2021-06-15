@@ -6,15 +6,17 @@ OK - header centered
 OK - view container
 NO - col in header
 OK - page bootstrap container- hover effect on nav btns
-- lists (example: https://micumo.com/pl/projekty)
+OK - lists (example: https://micumo.com/pl/projekty)
 https://bbbootstrap.com/snippets/latest-updates-list-68233138
 https://codepen.io/girlgeek/pen/dyOjrJE
-
+OK - view header colors change (brown / yellow)
+OK - techs view
+OK - techs model
+OK - main / about view
+- items list view display pic
+- view header font size in small screen
 - contact form
 - contact view
 - rodo / privacy policy
 - list of techs
-- techs view
-- techs model
-- main / about view
 - languages?
