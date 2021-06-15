@@ -1,7 +1,7 @@
+using IT_Solutions.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace IT_Solutions
 {
@@ -10,6 +10,7 @@ namespace IT_Solutions
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddTransient<IListItemFactory, ListItemFactory>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
