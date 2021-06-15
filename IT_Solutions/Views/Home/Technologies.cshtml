@@ -7,4 +7,15 @@
     <div class="col-12 viewHeader">
         <h1 class="align-text-bottom text-white">Technologies</h1>
     </div>
+    <section class="dl-blurbs col-12">
+        <dl class="row">
+            @foreach (ListItemModel item in @Model)
+            {
+                <div class="col-lg-6 col-12 itemContainer">
+                    <dt>@item.Name</dt>
+                    <dd>@item.Description</dd>
+                </div>
+            }
+        </dl>
+    </section>
 </div>
