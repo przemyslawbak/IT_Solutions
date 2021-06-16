@@ -5,15 +5,16 @@
 
 <div class="row">
     <div class="col-12 viewHeader">
-        <h1 class="align-text-bottom text-white">Services</h1>
+        <h1 class="align-text-bottom text-white">Services - what do we do</h1>
     </div>
     <section class="dl-blurbs col-12">
         <dl class="row">
             @foreach (ListItemModel item in @Model)
             {
-            <div class="col-12 itemContainer">
-                <dt>@item.Name</dt>
-                <dd>@item.Description</dd>
+            <div class="row itemContainer">
+                <dt class="col-12">@item.Name</dt>
+                <dp class="col-2"><img src="@item.ImgUrl"></dp>
+                <dd class="col-10">@item.Description</dd>
             </div>
             }
         </dl>
