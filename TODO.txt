@@ -13,10 +13,12 @@ OK - view header colors change (brown / yellow)
 OK - techs view
 OK - techs model
 OK - main / about view
-- items list view display pic
+OK - items list view display pic
 - view header font size in small screen
+- list text justify small screen?
 - contact form
 - contact view
-- rodo / privacy policy
-- list of techs
+- contact info about email
+NO - rodo / privacy policy
+OK - list of techs
 - languages?

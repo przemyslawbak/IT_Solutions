@@ -1,9 +1,10 @@
 ﻿using IT_Solutions.Models;
+using System.Threading.Tasks;
 
 namespace IT_Solutions.Services
 {
     public interface IEmailSender
     {
-        void SendMessage(MessageModel message);
+        Task<bool> SendMessageAsync(MessageModel message);
     }
 }

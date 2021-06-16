@@ -32,7 +32,7 @@ namespace IT_Solutions.Controllers
         [HttpPost]
         public IActionResult SendMessage(MessageModel message)
         {
-            _email.SendMessage(message);
+            _email.SendMessageAsync(message);
 
             return View("Sent");
         }
