@@ -8,6 +8,7 @@ namespace IT_Solutions.Controllers
     public class HomeController : Controller
     {
         private readonly IListItemFactory _lists;
+        private readonly IEmailSender _email;
         public HomeController(IListItemFactory lists)
         {
             _lists = lists;
@@ -26,6 +27,14 @@ namespace IT_Solutions.Controllers
         {
             @ViewBag.Title = "Contact";
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult SendMessage(MessageModel message)
+        {
+            _email.SendMessage(message);
+
+            return View("Sent");
         }
 
         [HttpGet("technologies")]

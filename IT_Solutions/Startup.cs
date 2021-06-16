@@ -11,6 +11,7 @@ namespace IT_Solutions
         {
             services.AddControllersWithViews();
             services.AddTransient<IListItemFactory, ListItemFactory>();
+            services.AddTransient<IEmailSender, EmailSender>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
