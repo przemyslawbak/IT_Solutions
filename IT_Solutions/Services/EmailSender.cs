@@ -28,7 +28,7 @@ namespace IT_Solutions.Services
             mailMessage.From.Add(new MailboxAddress(_configuration["EmailSender:Name"], _configuration["EmailSender:Address"]));
             mailMessage.ReplyTo.Add(new MailboxAddress(message.Name, message.SenderEmail));
             mailMessage.To.Add(new MailboxAddress(_configuration["EmailSender:Name"], _configuration["EmailSender:To"]));
-            mailMessage.Subject = "Contact form";
+            mailMessage.Subject = "IT Solutions - contact form";
             mailMessage.Body = new TextPart("plain")
             {
                 Text = message.Message
