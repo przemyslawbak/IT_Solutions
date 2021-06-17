@@ -1,4 +1,5 @@
-﻿@{
+﻿@model MessageModel
+@{
     Layout = "_Layout";
 }
 
@@ -7,3 +8,22 @@
         <h1 class="align-text-bottom text-white">Contact - quote and questions</h1>
     </div>
 </div>
+
+<form asp-controller="Home" asp-action="SendMessage" method="post">
+    <div class=row>
+        <div class="form-group col-lg-6 col-12 sendingForm">
+            <label class="col-12" asp-for="@Model.Name">* Your name:</label>
+            <input class="col-12 form-control" asp-for="@Model.Name" type="text" />
+            <label class="col-12" asp-for="@Model.SenderEmail">* Your email:</label>
+            <input class="col-12 form-control" asp-for="@Model.SenderEmail" type="text" />
+            <label class="col-12" asp-for="@Model.Message">* Message:</label>
+            <textarea class="col-12 form-control messageBox" asp-for="@Model.Message" type="text"></textarea>
+        </div>
+    </div>
+    <div class="col-lg-6 col-12 formComment">
+        * Required
+        <br />
+        * Your data will only be used to respond to your message
+    </div>
+    <button type="submit" class="btn btn-primary">Send message</button>
+</form>
