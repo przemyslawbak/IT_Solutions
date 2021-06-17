@@ -9,9 +9,10 @@ namespace IT_Solutions.Controllers
     {
         private readonly IListItemFactory _lists;
         private readonly IEmailSender _email;
-        public HomeController(IListItemFactory lists)
+        public HomeController(IListItemFactory lists, IEmailSender email)
         {
             _lists = lists;
+            _email = email;
         }
 
         [HttpGet("")]
@@ -30,11 +31,25 @@ namespace IT_Solutions.Controllers
         }
 
         [HttpPost]
-        public IActionResult SendMessage(MessageModel message)
+        public IActionResult SendMessage(MessageModel model)
         {
-            _email.SendMessageAsync(message);
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _email.SendMessageAsync(model);
 
-            return View("Sent");
+                    return View("MessageSent");
+                }
+                catch
+                {
+                    return View("MessageNotSent");
+                }
+            }
+            else
+            {
+                return View();
+            }
         }
 
         [HttpGet("technologies")]
