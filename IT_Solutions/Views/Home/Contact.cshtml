@@ -9,14 +9,23 @@
     </div>
 </div>
 
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="validationWrapWide">
+        <b>To send the form, please complete the required fields marked with red color.</b>
+    </div>
+}
 <form asp-controller="Home" asp-action="SendMessage" method="post">
     <div class=row>
         <div class="form-group col-lg-6 col-12 sendingForm">
             <label class="col-12" asp-for="@Model.Name">* Your name:</label>
+            <span asp-validation-for="Name"></span>
             <input class="col-12 form-control" asp-for="@Model.Name" type="text" />
             <label class="col-12" asp-for="@Model.SenderEmail">* Your email:</label>
+            <span asp-validation-for="SenderEmail"></span>
             <input class="col-12 form-control" asp-for="@Model.SenderEmail" type="text" />
             <label class="col-12" asp-for="@Model.Message">* Message:</label>
+            <span asp-validation-for="Message"></span>
             <textarea class="col-12 form-control messageBox" asp-for="@Model.Message" type="text"></textarea>
         </div>
     </div>
