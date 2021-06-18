@@ -1,4 +1,5 @@
 ﻿@model List<ListItemModel>
+@inject IViewLocalizer Localizer
 @{
     Layout = "_Layout";
 }
@@ -11,11 +12,11 @@
         <dl class="row">
             @foreach (ListItemModel item in @Model)
             {
-            <div class="row itemContainer">
-                <dt class="col-12">@item.Name</dt>
-                <dp class="col-2"><img src="@item.ImgUrl"></dp>
-                <dd class="col-10">@item.Description</dd>
-            </div>
+                <div class="row itemContainer">
+                    <dt class="col-12">@item.Name</dt>
+                    <dp class="col-2"><img src="@item.ImgUrl"></dp>
+                    <dd class="col-10">@item.Description</dd>
+                </div>
             }
         </dl>
     </section>
