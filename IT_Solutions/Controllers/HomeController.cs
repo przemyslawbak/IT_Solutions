@@ -48,7 +48,7 @@ namespace IT_Solutions.Controllers
             }
             else
             {
-                return View();
+                return View("Contact", model);
             }
         }
 

@@ -14,11 +14,15 @@ OK - techs view
 OK - techs model
 OK - main / about view
 OK - items list view display pic
-- view header font size in small screen
-- list text justify small screen?
-- contact form
-- contact view
-- contact info about email
+OK - contact form
+OK - contact view
+OK - contact info about email
 NO - rodo / privacy policy
 OK - list of techs
-- languages?
+- front end validation display
+- message sent / not sent
+- sanitize inputs
+- view header font size in small screen
+- list text justify small screen?
+- backend form validation
+- languages EN/PL
