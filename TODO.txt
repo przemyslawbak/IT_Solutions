@@ -19,10 +19,11 @@ OK - contact view
 OK - contact info about email
 NO - rodo / privacy policy
 OK - list of techs
-- front end validation display
-- message sent / not sent
-- sanitize inputs
-- view header font size in small screen
-- list text justify small screen?
-- backend form validation
+OK - mime kit error on sending
+OK - front end validation display
+OK - message sent / not sent
+OK - backend form validation
+NO - sanitize inputs
+OK - view header font size in small screen
+OK - list text justify small screen?
 - languages EN/PL
