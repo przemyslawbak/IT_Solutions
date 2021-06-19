@@ -15,14 +15,20 @@ namespace IT_Solutions.Controllers
             _email = email;
         }
 
-        public IActionResult Index()
+        [Route("/{culture}/")]
+        [Route("/{culture}/services")]
+        [Route("services")]
+        [Route("")]
+        public IActionResult Index(string culture = "en")
         {
             List<ListItemModel> serviceList = _lists.GetAllServices();
             @ViewBag.Title = "Services";
             return View(serviceList);
         }
 
-        public IActionResult Contact()
+        [Route("/{culture}/contact")]
+        [Route("contact")]
+        public IActionResult Contact(string culture = "en")
         {
             @ViewBag.Title = "Contact";
             return View();
@@ -50,8 +56,9 @@ namespace IT_Solutions.Controllers
             }
         }
 
-        [HttpGet("technologies")]
-        public IActionResult Technologies()
+        [Route("/{culture}/technologies")]
+        [Route("technologies")]
+        public IActionResult Technologies(string culture = "en")
         {
             List<ListItemModel> technologyList = _lists.GetAllTechnologies();
             @ViewBag.Title = "Technologies";
