@@ -118,27 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="* Message:" xml:space="preserve">
-    <value>* Wiadomość:</value>
+    <value>* Message:</value>
   </data>
   <data name="* Required fields" xml:space="preserve">
-    <value>* Pola wymagane</value>
+    <value>* Required fields</value>
   </data>
   <data name="* Your data will only be used to respond to your message" xml:space="preserve">
-    <value>* Twoje dane będą wykorzystane jedynie w celu odpowiedzenia na tą wiadomość</value>
+    <value>* Your data will only be used to respond to your message</value>
   </data>
   <data name="* Your email:" xml:space="preserve">
-    <value>* Twój adres email:</value>
+    <value>* Your email:</value>
   </data>
   <data name="* Your name:" xml:space="preserve">
-    <value>* Twoje nazwisko:</value>
+    <value>* Your name:</value>
   </data>
   <data name="Contact - quote and questions" xml:space="preserve">
-    <value>Kontakt - wycena i pytania</value>
+    <value>Contact - quote and questions</value>
   </data>
   <data name="Send message" xml:space="preserve">
-    <value>Wyślij wiadomość</value>
+    <value>Send message</value>
   </data>
   <data name="To send the form, please complete the required fields marked with red color." xml:space="preserve">
-    <value>Żeby wysłać formularz proszę wypełnić wymagane pola oznaczone kolorem czerwonym.</value>
+    <value>To send the form, please complete the required fields marked with red color.</value>
   </data>
 </root>

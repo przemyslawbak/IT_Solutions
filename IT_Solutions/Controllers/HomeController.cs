@@ -15,7 +15,6 @@ namespace IT_Solutions.Controllers
             _email = email;
         }
 
-        [HttpGet("")]
         public IActionResult Index()
         {
             List<ListItemModel> serviceList = _lists.GetAllServices();
@@ -23,7 +22,6 @@ namespace IT_Solutions.Controllers
             return View(serviceList);
         }
 
-        [HttpGet("contact")]
         public IActionResult Contact()
         {
             @ViewBag.Title = "Contact";
