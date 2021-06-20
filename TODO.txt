@@ -26,6 +26,8 @@ OK - backend form validation
 NO - sanitize inputs
 OK - view header font size in small screen
 OK - list text justify small screen?
+- SEO
+- contacts - address
 - languages EN/PL
 - resource files https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-5.0#resource-files-2
 - dataannotations https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-5.0#dataannotations-localization-2

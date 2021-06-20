@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="The message has been sent correctly. We will contact you at the earliest possible opportunity." xml:space="preserve">
-    <value>The message has been sent correctly. We will contact you at the earliest possible opportunity.</value>
+    <value>The message has been sent. We will contact you at the earliest possible opportunity.</value>
   </data>
 </root>
