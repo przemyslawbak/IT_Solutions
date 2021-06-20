@@ -16,7 +16,7 @@
             <div class="header">
                 <!--HEADER-->
                 <div class="mainHeader">
-                    <select id="selectpicker">
+                    <select id="selectpicker" value="@ViewBag.Culture" onchange="selectionChanged()">
                         <option value="en">🇬🇧&emsp;English</option>
                         <option value="pl">🇵🇱&emsp;Polski</option>
                     </select>
@@ -58,6 +58,19 @@
     <script src="~/src/js/realshadow.js"></script>
     <script src="~/src/js/headerShading.js"></script>
     <script src="~/src/js/spotlight.js"></script>
+    <script>
+        let languageSelection = document.getElementById('selectpicker');
+        languageSelection.value = '@ViewBag.Culture';
+
+        function selectionChanged() {
+            let url = document.URL;
+            let DELIMITER = "/";
+            let parts = url.split(DELIMITER);
+            parts[3] = languageSelection.value;
+            url = parts.join(DELIMITER);
+            window.location.href = url;
+            }
+    </script>
 </body>
 </html>
 

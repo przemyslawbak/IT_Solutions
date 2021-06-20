@@ -26,8 +26,13 @@ OK - backend form validation
 NO - sanitize inputs
 OK - view header font size in small screen
 OK - list text justify small screen?
-- SEO
-- contacts - address
-- languages EN/PL
-- resource files https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-5.0#resource-files-2
+OK - resource files https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-5.0#resource-files-2
+NO - contacts - address
+OK - languages EN/PL
+OK - Localizaton for service content
+OK - pick up languages
+- fill up with content
+- new name
+- new favicon
 - dataannotations https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-5.0#dataannotations-localization-2
+- SEO
