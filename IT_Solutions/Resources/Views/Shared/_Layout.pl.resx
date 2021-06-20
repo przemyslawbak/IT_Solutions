@@ -120,6 +120,9 @@
   <data name="contact" xml:space="preserve">
     <value>kontakt</value>
   </data>
+  <data name="for you and your business" xml:space="preserve">
+    <value>dla Ciebie i Twojego biznesu</value>
+  </data>
   <data name="services" xml:space="preserve">
     <value>usługi</value>
   </data>

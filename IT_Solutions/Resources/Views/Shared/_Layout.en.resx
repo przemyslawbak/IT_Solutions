@@ -117,28 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="* Message:" xml:space="preserve">
-    <value>* Message:</value>
+  <data name="contact" xml:space="preserve">
+    <value>contact</value>
   </data>
-  <data name="* Required fields" xml:space="preserve">
-    <value>* Required fields</value>
+  <data name="for you and your business" xml:space="preserve">
+    <value>for you and your business</value>
   </data>
-  <data name="* Your data will only be used to respond to your message" xml:space="preserve">
-    <value>* Your data will only be used to respond to your message</value>
+  <data name="services" xml:space="preserve">
+    <value>services</value>
   </data>
-  <data name="* Your email:" xml:space="preserve">
-    <value>* Your email:</value>
-  </data>
-  <data name="* Your name:" xml:space="preserve">
-    <value>* Your name:</value>
-  </data>
-  <data name="Contact - quote and questions" xml:space="preserve">
-    <value>Contact - quote and questions</value>
-  </data>
-  <data name="Send message" xml:space="preserve">
-    <value>Send message</value>
-  </data>
-  <data name="To send the form, please complete the required fields marked with red color." xml:space="preserve">
-    <value>To send the form, please complete the required fields marked with red color.</value>
+  <data name="technologies" xml:space="preserve">
+    <value>technologies</value>
   </data>
 </root>
