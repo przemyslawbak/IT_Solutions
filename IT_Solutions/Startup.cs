@@ -52,7 +52,7 @@ namespace IT_Solutions
             app.UseRequestLocalization();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(name: "culture-route", pattern: "{culture=en}/{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(name: "culture-route", pattern: "{l=en}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllers();
             });

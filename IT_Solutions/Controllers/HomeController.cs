@@ -23,6 +23,7 @@ namespace IT_Solutions.Controllers
         {
             List<ListItemModel> serviceList = _lists.GetAllServices();
             @ViewBag.Title = "Services";
+            @ViewBag.Culture = culture;
             return View(serviceList);
         }
 
@@ -31,6 +32,7 @@ namespace IT_Solutions.Controllers
         public IActionResult Contact(string culture = "en")
         {
             @ViewBag.Title = "Contact";
+            @ViewBag.Culture = culture;
             return View();
         }
 
@@ -62,6 +64,7 @@ namespace IT_Solutions.Controllers
         {
             List<ListItemModel> technologyList = _lists.GetAllTechnologies();
             @ViewBag.Title = "Technologies";
+            @ViewBag.Culture = culture;
             return View(technologyList);
         }
     }
