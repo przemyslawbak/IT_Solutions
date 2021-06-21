@@ -123,11 +123,20 @@
   <data name="backend" xml:space="preserve">
     <value>If you need software that will improve your daily work or the work of your company? Or maybe you want to improve or develop the current systems? We are able to provide you with backend applications that will meet your requirements.</value>
   </data>
+  <data name="Backend applications" xml:space="preserve">
+    <value>Backend applications</value>
+  </data>
   <data name="business" xml:space="preserve">
     <value>If you are looking for someone who will make a website business card for you, or a web application dedicated specifically to your business and made according to your requirements, we can design it, create it from scratch, or develop an existing solution that you use.</value>
   </data>
+  <data name="Business websites" xml:space="preserve">
+    <value>Business websites</value>
+  </data>
   <data name="console" xml:space="preserve">
     <value>Sometimes the client needs a simple application without a fancy user interface to perform calculations or file operations. Console applications run on local machines with simple and convenient control work for this purpose. We are able to make one on request.</value>
+  </data>
+  <data name="Console applications" xml:space="preserve">
+    <value>Console applications</value>
   </data>
   <data name="core" xml:space="preserve">
     <value>We work with ASP.NET Core. It is a free open source framework and successor to ASP.NET, developed by Microsoft. It is a modular structure that runs on both the full .NET Framework, Windows and the cross-platform .NET Core. The perfect solution for both corporations and small businesses.</value>
@@ -141,11 +150,29 @@
   <data name="outsourcing" xml:space="preserve">
     <value>We are ready to cooperate with your company both in the implementation of entire projects and only its individual parts, using the technologies we work with.</value>
   </data>
+  <data name="Outsourcing_" xml:space="preserve">
+    <value>Outsourcing</value>
+  </data>
   <data name="rest" xml:space="preserve">
     <value>On request, we create RESTful Web API. Restful Web Services is a lightweight, maintainable, and scalable service that is built on the REST architecture. Restful Web Service, expose API from your application in a secure, uniform, stateless manner to the calling client app.</value>
   </data>
+  <data name="RESTful Web Apis" xml:space="preserve">
+    <value>RESTful Web Apis</value>
+  </data>
+  <data name="uiux" xml:space="preserve">
+    <value>We design the appearance and interfaces for various applications, ranging from web applications, through mobile applications, to programs run on local machines, all in cooperation with the client.</value>
+  </data>
+  <data name="UiUx Design" xml:space="preserve">
+    <value>UI/UX design</value>
+  </data>
   <data name="web" xml:space="preserve">
-    <value>Web application Is application software that runs on a web server, unlike computer-based software programs that are run locally on the operating system (OS) of the device. Web applications are accessed by the user through a web browser with an active network connection. We are ready to create and maintain various types of Web applications.</value>
+    <value>Web application Is application software that runs on a web server, unlike computer-based software programs that are run locally on the operating system (OS) of the device. Web applications are accessed by the user through a web browser with an active network connection. We are ready to create and maintain various types of responsive web applications.</value>
+  </data>
+  <data name="Web applications" xml:space="preserve">
+    <value>Web applications</value>
+  </data>
+  <data name="Windows desktop applications" xml:space="preserve">
+    <value>Windows desktop applications</value>
   </data>
   <data name="wpf" xml:space="preserve">
     <value>Windows Presentation Foundation is used by us to create desktop applications and Web API clients. It is a free and open-source graphical subsystem originally developed by Microsoft for rendering user interfaces in Windows-based applications.</value>

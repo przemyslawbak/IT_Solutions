@@ -123,11 +123,20 @@
   <data name="backend" xml:space="preserve">
     <value>Jeśli potrzebujesz oprogramowania które usprawni Twoją codzienną pracę, lub pracę Twojej firmy? A może chcesz ulepszyć albo rozwinąć obecne systemy? Jesteśmy w stanie Ci dostarczyć aplikacje  backendowe którę będą spełniać Twoje wymagania.</value>
   </data>
+  <data name="Backend applications" xml:space="preserve">
+    <value>Aplikacje backendowe</value>
+  </data>
   <data name="business" xml:space="preserve">
-    <value>Jeśli szukasz kogoś kto wykona Ci internetową stonę wizytówkę, lub aplikację webową dedykowaną specjalnie dla Twojego biznesu i wykonaną według Twoich wymagań, możemy Ci ją zaprojektować, stworzyć od podstaw, lub rozwinąć istniejące rozwiązanie z którego korzystasz.</value>
+    <value>Jeśli szukasz kogoś kto wykona Ci internetową stonę wizytówkę, lub aplikację webową, która będzie wyglądać dobrze także na urządzeniach mobilnych, dedykowaną specjalnie dla Twojego biznesu i wykonaną według Twoich wymagań, możemy Ci ją zaprojektować, stworzyć od podstaw, lub rozwinąć istniejące rozwiązanie z którego korzystasz.</value>
+  </data>
+  <data name="Business websites" xml:space="preserve">
+    <value>Strony dla biznesu</value>
   </data>
   <data name="console" xml:space="preserve">
     <value>Czasami klient potrzebuje prostej aplikacji bez wyszukanego interfejsu użytkownika, kóre będzie wykonywało obliczenia lub operacje na plikach. Do tego celu spisują się świenie aplikacje konsolowe uruchamiane na lokalnych maszynach z prostym i wygodnym starowaniem. Jesteśmy w stanie wykonać Ci taką na zlecenie.</value>
+  </data>
+  <data name="Console applications" xml:space="preserve">
+    <value>Aplikacje konsolowe</value>
   </data>
   <data name="core" xml:space="preserve">
     <value>Pracujemy z ASP.NET Core. Jest to darmowy framework o otwartym kodzie źródłowym i następczyni ASP.NET, opracowana przez firmę Microsoft. Jest to modułowa struktura, która działa zarówno na pełnym .NET Framework, w systemie Windows, jak i na wieloplatformowym .NET Core. Idealne rozwiązanie zarówno dla korporacji jak i małego biznesu.</value>
@@ -141,11 +150,29 @@
   <data name="outsourcing" xml:space="preserve">
     <value>Jesteśmy gotowi na współpracę z Twoją firmą zarówno w implementacji całych projektów, jak i jedynie jego poszczególnych części, wykorzystując technologie w których pracujemy.</value>
   </data>
+  <data name="Outsourcing_" xml:space="preserve">
+    <value>Outsourcing</value>
+  </data>
   <data name="rest" xml:space="preserve">
     <value>Na życzenie tworzymy RESTful Web API. Restful Web Services to uproszczona, łatwa w utrzymaniu i skalowalna usługa oparta na architekturze REST. Restful Web Service, udostępniaj interfejs API z aplikacji w bezpieczny, jednolity, bezstanowy sposób wywołującej aplikacji klienckiej.</value>
   </data>
+  <data name="RESTful Web Apis" xml:space="preserve">
+    <value>RESTful Web Apis</value>
+  </data>
+  <data name="uiux" xml:space="preserve">
+    <value>Zajmujemy się projektowaniem wyglądu i interfejsów dla różnych aplikacji, począwszy od aplikacji webowych, przez mobilne, po programy uruchamiane na lokalnych maszynach, wszysto ze współpracą z klientem.</value>
+  </data>
+  <data name="UiUx Design" xml:space="preserve">
+    <value>Projektowanie interfejsów użytkownika</value>
+  </data>
   <data name="web" xml:space="preserve">
-    <value>Aplikacja internetowa Jest to aplikacja działająca na serwerze sieciowym, w przeciwieństwie do programów komputerowych uruchamianych lokalnie w systemie operacyjnym (OS) urządzenia. Użytkownik uzyskuje dostęp do aplikacji internetowych za pośrednictwem przeglądarki internetowej z aktywnym połączeniem sieciowym. Jesteśmy gotowi do tworzenia i utrzymywania różnego rodzaju aplikacji internetowych.</value>
+    <value>Aplikacja internetowa Jest to aplikacja działająca na serwerze sieciowym, w przeciwieństwie do programów komputerowych uruchamianych lokalnie w systemie operacyjnym (OS) urządzenia. Użytkownik uzyskuje dostęp do aplikacji internetowych za pośrednictwem przeglądarki internetowej z aktywnym połączeniem sieciowym. Jesteśmy gotowi do tworzenia i utrzymywania różnego rodzaju responsywnych aplikacji internetowych, które przygotowane do wyświetlenia w przeglądarkach urządzeń mobilnych.</value>
+  </data>
+  <data name="Web applications" xml:space="preserve">
+    <value>Aplikacje webowe</value>
+  </data>
+  <data name="Windows desktop applications" xml:space="preserve">
+    <value>Aplikacje okienkowe dla Window</value>
   </data>
   <data name="wpf" xml:space="preserve">
     <value>Windows Presentation Foundation służy nam do tworzenia aplikacji desktopowych oraz klientów Web API. Jest to darmowy podsystem graficzny typu open source, pierwotnie opracowany przez firmę Microsoft do renderowania interfejsów użytkownika w aplikacjach opartych na systemie Windows.</value>

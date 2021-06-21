@@ -17,13 +17,14 @@ namespace IT_Solutions.Services
         {
             return new List<ListItemModel>()
             {
-                new ListItemModel() { ImgUrl = "/src/img/business.png", Name = "Business websites", Description = _localizer["business"]},
-                new ListItemModel() { ImgUrl = "/src/img/backend.png", Name = "Backend applications", Description = _localizer["backend"]},
-                new ListItemModel() { ImgUrl = "/src/img/web.png", Name = "Web applications", Description = _localizer["web"]},
-                new ListItemModel() { ImgUrl = "/src/img/rest.png", Name = "RESTful Web Apis", Description = _localizer["rest"]},
-                new ListItemModel() { ImgUrl = "/src/img/desktop.png", Name = "Windows desktop applications", Description = _localizer["desktop"]},
-                new ListItemModel() { ImgUrl = "/src/img/console.png", Name = "Console applications", Description = _localizer["console"]},
-                new ListItemModel() { ImgUrl = "/src/img/outsourcing.png", Name = "Outsourcing", Description = _localizer["outsourcing"]},
+                new ListItemModel() { ImgUrl = "/src/img/business.png", Name = _localizer["Business websites"], Description = _localizer["business"]},
+                new ListItemModel() { ImgUrl = "/src/img/backend.png", Name = _localizer["Backend applications"], Description = _localizer["backend"]},
+                new ListItemModel() { ImgUrl = "/src/img/web.png", Name = _localizer["Web applications"], Description = _localizer["web"]},
+                new ListItemModel() { ImgUrl = "/src/img/rest.png", Name = _localizer["RESTful Web Apis"], Description = _localizer["rest"]},
+                new ListItemModel() { ImgUrl = "/src/img/desktop.png", Name = _localizer["Windows desktop applications"], Description = _localizer["desktop"]},
+                new ListItemModel() { ImgUrl = "/src/img/console.png", Name = _localizer["Console applications"], Description = _localizer["console"]},
+                new ListItemModel() { ImgUrl = "/src/img/uiux.png", Name = _localizer["UiUx Design"], Description = _localizer["uiux"]},
+                new ListItemModel() { ImgUrl = "/src/img/outsourcing.png", Name = _localizer["Outsourcing_"], Description = _localizer["outsourcing"]},
                 };
         }
 
