@@ -31,8 +31,10 @@ NO - contacts - address
 OK - languages EN/PL
 OK - Localizaton for service content
 OK - pick up languages
-- fill up with content
+NO - dataannotations https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-5.0#dataannotations-localization-2
+OK - fill up with content
+- to lists add UI/UX design
+- polish names of listed items, add in locator
 - new name
 - new favicon
-- dataannotations https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-5.0#dataannotations-localization-2
 - SEO
