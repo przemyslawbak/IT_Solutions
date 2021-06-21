@@ -18,18 +18,24 @@ namespace IT_Solutions.Controllers
         [Route("/{culture}/")]
         [Route("/{culture}/services")]
         [Route("services")]
-        [Route("")]
-        public IActionResult Index(string culture = "en")
+        public IActionResult Index(string culture = "pl")
         {
             List<ListItemModel> serviceList = _lists.GetAllServices();
             @ViewBag.Title = "Services";
             @ViewBag.Culture = culture;
             return View(serviceList);
         }
+        [Route("")]
+        public IActionResult IndexRedirect(string culture = "pl")
+        {
+            return RedirectPermanent("/" + culture + "/services");
+        }
+
+
 
         [Route("/{culture}/contact")]
         [Route("contact")]
-        public IActionResult Contact(string culture = "en")
+        public IActionResult Contact(string culture = "pl")
         {
             @ViewBag.Title = "Contact";
             @ViewBag.Culture = culture;
@@ -60,7 +66,7 @@ namespace IT_Solutions.Controllers
 
         [Route("/{culture}/technologies")]
         [Route("technologies")]
-        public IActionResult Technologies(string culture = "en")
+        public IActionResult Technologies(string culture = "pl")
         {
             List<ListItemModel> technologyList = _lists.GetAllTechnologies();
             @ViewBag.Title = "Technologies";

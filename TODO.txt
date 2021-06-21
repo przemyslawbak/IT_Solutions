@@ -36,5 +36,9 @@ OK - fill up with content
 OK - to lists add UI/UX design
 OK - polish names of listed items, add in locator
 NO - new name
-- new favicon
 OK - SEO
+OK - sitemap
+OK - SSL
+- add sitemat in Google
+- new favicon
+- meta SEO
