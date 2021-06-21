@@ -13,9 +13,9 @@
             @foreach (ListItemModel item in @Model)
             {
                 <div class="row itemContainer">
-                    <dt class="col-12">@item.Name</dt>
+                    <h2 class="col-12">@item.Name</h2>
                     <dp class="col-2"><img src="@item.ImgUrl"></dp>
-                    <dd class="col-10">@item.Description</dd>
+                    <h3 class="col-10">@item.Description</h3>
                 </div>
             }
         </dl>
