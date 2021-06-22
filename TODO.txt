@@ -39,6 +39,13 @@ NO - new name
 OK - SEO
 OK - sitemap
 OK - SSL
-- add sitemat in Google
-- new favicon
-- meta SEO
+OK - https redirection for przemyslaw-bak.pl?
+OK - add sitemap in Google
+OK - add to analytics
+NO - new favicon
+OK - fill up in resources @ViewBag.Description
+OK - fill up keywords in the cotroller
+OK - meta tags SEO
+- add logo
+- add schema https://developers.google.com/search/docs/data-types/logo
+- correct error view

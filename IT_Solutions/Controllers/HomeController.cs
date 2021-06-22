@@ -27,6 +27,7 @@ namespace IT_Solutions.Controllers
             @ViewBag.Title = "Services";
             @ViewBag.Culture = culture;
             @ViewBag.Description = _localizer["Index description"];
+            @ViewBag.KeyWords = "services, usługi, development, it, it development, websites, applications, strony, aplikacje, web api, console, outsourcing, business, Przemysław Bąk, IT Solutions, Przemysław Bąk IT Solutions";
             return View(serviceList);
         }
         [Route("")]
@@ -42,7 +43,20 @@ namespace IT_Solutions.Controllers
             @ViewBag.Title = "Contact";
             @ViewBag.Culture = culture;
             @ViewBag.Description = _localizer["Contact description"];
+            @ViewBag.KeyWords = "contact form, contact, contact us, formularz kontaktowy, kontakt, skontaktuj się, Przemysław Bąk, IT Solutions, Przemysław Bąk IT Solutions";
             return View();
+        }
+
+        [Route("/{culture}/technologies")]
+        [Route("technologies")]
+        public IActionResult Technologies(string culture = "pl")
+        {
+            List<ListItemModel> technologyList = _lists.GetAllTechnologies();
+            @ViewBag.Title = "Technologies";
+            @ViewBag.Culture = culture;
+            @ViewBag.Description = _localizer["Technologies description"];
+            @ViewBag.KeyWords = "techologies, technologie, development, ASP.NET Core, Angular, WPF, MSSQL, it, it development, websites, applications, strony, aplikacje, web api, console, outsourcing, business, Przemysław Bąk, IT Solutions, Przemysław Bąk IT Solutions";
+            return View(technologyList);
         }
 
         [HttpPost]
@@ -65,17 +79,6 @@ namespace IT_Solutions.Controllers
             {
                 return View("Contact", model);
             }
-        }
-
-        [Route("/{culture}/technologies")]
-        [Route("technologies")]
-        public IActionResult Technologies(string culture = "pl")
-        {
-            List<ListItemModel> technologyList = _lists.GetAllTechnologies();
-            @ViewBag.Title = "Technologies";
-            @ViewBag.Culture = culture;
-            @ViewBag.Description = _localizer["Technologies description"];
-            return View(technologyList);
         }
     }
 }
