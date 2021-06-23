@@ -46,6 +46,7 @@ NO - new favicon
 OK - fill up in resources @ViewBag.Description
 OK - fill up keywords in the cotroller
 OK - meta tags SEO
+- remove console logs: container 1 text split
 - add logo
 - add schema https://developers.google.com/search/docs/data-types/logo
 - correct error view
