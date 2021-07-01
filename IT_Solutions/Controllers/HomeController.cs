@@ -31,7 +31,6 @@ namespace IT_Solutions.Controllers
             return View(serviceList);
         }
         [Route("")]
-        [Route("/")]
         public IActionResult IndexRedirect(string culture = "pl")
         {
             return RedirectPermanent("/" + culture + "/services");
