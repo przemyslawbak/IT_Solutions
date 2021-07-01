@@ -34,7 +34,6 @@ namespace IT_Solutions
         public void Configure(IApplicationBuilder app)
         {
             app.UseHttpsRedirection();
-            app.UseHsts();
             app.Use(async (context, next) =>
             {
                 if (!context.Request.IsHttps)
