@@ -18,7 +18,6 @@ namespace IT_Solutions.Controllers
             _localizer = localizer;
         }
 
-        [Route("/{culture}/")]
         [Route("/{culture}/services")]
         [Route("services")]
         public IActionResult Index(string culture = "pl")

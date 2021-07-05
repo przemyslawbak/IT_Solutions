@@ -36,17 +36,6 @@ namespace IT_Solutions
         public void Configure(IApplicationBuilder app)
         {
             app.UseHttpsRedirection();
-            app.Use(async (context, next) =>
-            {
-                if (!context.Request.IsHttps)
-                {
-                    context.Response.Redirect("/error.html");
-
-                    return;
-                }
-
-                await next();
-            });
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -55,6 +44,7 @@ namespace IT_Solutions
             {
                 endpoints.MapControllerRoute(name: "culture-route", pattern: "{culture=en}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(name: "error", "error", new { controller = "Error", action = "PageNotFound" });
                 endpoints.MapControllers();
             });
         }
