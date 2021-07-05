@@ -1,1 +1,10 @@
-﻿Page not found
+﻿@inject IViewLocalizer Localizer
+@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col-lg-6 col-12 sendingWrongResult">
+        @Localizer["Page not found."]
+    </div>
+</div>

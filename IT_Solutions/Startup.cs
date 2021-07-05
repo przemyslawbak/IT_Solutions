@@ -37,14 +37,20 @@ namespace IT_Solutions
         {
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.Use(async (context, next) =>
+            {
+                await next();
+                if (context.Response.StatusCode == 404)
+                {
+                    context.Request.Path = "/error/page-not-found";
+                    await next();
+                }
+            });
             app.UseRouting();
             app.UseRequestLocalization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(name: "culture-route", pattern: "{culture=en}/{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapControllerRoute(name: "error", "error", new { controller = "Error", action = "PageNotFound" });
                 endpoints.MapControllers();
             });
         }
