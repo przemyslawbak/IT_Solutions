@@ -1,13 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 
 namespace IT_Solutions.Controllers
 {
     public class ErrorController : Controller
     {
-        [Route("/error/page-not-found")]
-        public IActionResult PageNotFound(string culture = "pl")
+        private readonly IStringLocalizer<HomeController> _localizer;
+
+        public ErrorController(IStringLocalizer<HomeController> localizer)
         {
-            @ViewBag.Culture = culture;
+            _localizer = localizer;
+        }
+
+        [Route("/error/page-not-found")]
+        public IActionResult PageNotFound()
+        {
+            @ViewBag.Message = _localizer["Page not found"];
             return View();
         }
     }
