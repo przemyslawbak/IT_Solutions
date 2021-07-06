@@ -1,4 +1,9 @@
 ﻿@inject IViewLocalizer Localizer
+@if (ViewBag.Culture == null)
+{
+    ViewBag.Culture = "pl";
+}
+
 <!DOCTYPE html>
 <html>
 <head>
