@@ -172,7 +172,7 @@
     <value>Aplikacje webowe</value>
   </data>
   <data name="Windows desktop applications" xml:space="preserve">
-    <value>Aplikacje okienkowe dla Window</value>
+    <value>Aplikacje okienkowe dla Windows</value>
   </data>
   <data name="wpf" xml:space="preserve">
     <value>Windows Presentation Foundation służy nam do tworzenia aplikacji desktopowych oraz klientów Web API. Jest to darmowy podsystem graficzny typu open source, pierwotnie opracowany przez firmę Microsoft do renderowania interfejsów użytkownika w aplikacjach opartych na systemie Windows.</value>
