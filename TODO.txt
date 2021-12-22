@@ -1,3 +1,15 @@
+- name options:
+	priori soft
+- fix header
+- correct small screen size
+- domain change
+- add machine learning
+- add python
+- add data science
+- add "about" tab
+- make logo
+- change favicon to logo
+
 OK - complete default routing
 OK - complete routing
 OK - background effect
