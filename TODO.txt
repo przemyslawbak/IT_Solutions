@@ -1,14 +1,17 @@
-- name options:
+OK - name options:
 	priori soft
 - fix header
+- remove header back pic
+- keep header shadows?
 - correct small screen size
+OK - domain buy
 - domain change
 - add machine learning
 - add python
 - add data science
 - add "about" tab
-- make logo
-- change favicon to logo
+- make logo: priori (pyramid) soft
+- change favicon to logo (pyramid)
 
 OK - complete default routing
 OK - complete routing
