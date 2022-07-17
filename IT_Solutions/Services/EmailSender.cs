@@ -41,13 +41,16 @@ namespace IT_Solutions.Services
         {
             try
             {
-                using (SmtpClient client = new SmtpClient())
+                if (!msg.TextBody.Contains("submi") && !msg.TextBody.Contains("director"))
                 {
-                    client.ServerCertificateValidationCallback = (s, c, h, e) => true;
-                    client.Connect(_configuration["EmailSender:Host"], 587, false);
-                    client.Authenticate(_configuration["EmailSender:Address"], _configuration["EmailSender:Password"]);
-                    await client.SendAsync(msg);
-                    client.Disconnect(true);
+                    using (SmtpClient client = new SmtpClient())
+                    {
+                        client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+                        client.Connect(_configuration["EmailSender:Host"], 587, false);
+                        client.Authenticate(_configuration["EmailSender:Address"], _configuration["EmailSender:Password"]);
+                        await client.SendAsync(msg);
+                        client.Disconnect(true);
+                    }
                 }
 
                 return true;
